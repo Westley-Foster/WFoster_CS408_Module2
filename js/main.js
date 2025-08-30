@@ -8,9 +8,13 @@
 
 /**
  * This function prints the string 'Hello World' to the console
+ * 
+ * NOTE: I found how to present an alert from w3schools.com at
+ *       https://www.w3schools.com/js/js_popup.asp
  */
 export function helloWorld() {
-    console.log('Hello World');
+    window.alert("Hello World, you clicked the alert button");
+    //console.log('Hello World');
 }
 
 /**

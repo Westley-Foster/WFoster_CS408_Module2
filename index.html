@@ -12,10 +12,41 @@
 
 <body>
   <h1>HTML Rocks!</h1>
+
+  <!-- Added modifications for assignment (comment notation found by Google's AI overview) -->
+  <style>
+    body{
+      /* Background tutorial found on w3schools.com at https://www.w3schools.com/html/html_images_background.asp */
+      background-image: url('https://cdn1.progressivechurchmedia.com/wp-content/uploads/2022/08/21172027/FallHeartLeaves_Insta.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+
+  <h2>A Little About Me</h2> 
+
+  <ul style="list-style-type: disc">
+    <li>My name is Westley</li>
+    <li>I expect to graduate in the fall of 2026</li>
+    <li>I currently do not have a job doing web development</li>
+    <li>Although I do have a little bit of experience with making websites
+        with  HTML and CSS, I haven't had a job or internship doing web dev.
+    </li>
+  </ul>
+
+  <p></p>
+  <h3>Pixel Mask Avatar by Me</h3>
+  <img src="img/Pixel_Mask.png" width="100" height="100">
+
+  
+
   <p>
-    <button  onclick="helloWorld()">Prints Hello World to the Developer console</button>
+    <button  onclick="helloWorld()">Hello World Alert</button>
   </p>
-  <hr>
+
+  <!-- hr styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp -->
+  <hr style="border: none; height: 3px; background-color: rgb(195, 140, 219);">
   <form id="addForm">
     <label for="num1">Number 1:</label>
     <input type="number" id="num1" name="num1" required>
@@ -28,12 +59,12 @@
 
   <label id="result">Result:</label>
 
-  <hr>
+  <hr style="border: none; height: 3px; background-color: rgb(195, 140, 219);">
 
   <button id="jokeButton">Get a Random Joke</button>
   <p id="joke"></p>
 
-  <hr>
+  <hr style="border: none; height: 3px; background-color: rgb(195, 140, 219);">
   <button id="jokeButtonTable">Get a  5 Random Jokes</button>
   <table id="jokeTable"></table>
 

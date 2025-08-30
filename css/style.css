@@ -27,3 +27,25 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #e9e9e9;
 }
+
+/* Added CSS rules */
+h2{
+  font-size: 22px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+ul{
+  font-size: 16px;
+  color: rgb(32, 97, 171);
+}
+
+button{
+  background-color: rgb(210, 207, 207);
+}
+
+label{
+  color: rgb(15, 161, 47);
+}
