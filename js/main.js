@@ -62,3 +62,41 @@ export async function fetch5RandomJokes() {
         throw new Error(error.message);
     }
 }
+
+//My own added functions so I can test them in the test.js class
+/**
+ * This function multiplies two numbers together and returns the product
+ * @param {number} a The first number to multiply
+ * @param {number} b The second number to multiply
+ * @returns {number} The product of the two numbers
+ */
+export function multiply(num1, num2) {
+    if (num1 === undefined || num2 === undefined) {
+        throw new Error('You must provide two numbers to multiply with each other');
+    }
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        throw new Error('You must provide two numbers to multiply with each other');
+    }
+
+    return num1 * num2;
+}
+
+/**
+ * This function divides two numbers and returns the quotient.
+ * @param {number} a The first number to multiply
+ * @param {number} b The second number to multiply
+ * @returns {number} The product of the two numbers
+ */
+export function divide(num1, num2) {
+    if (num1 === undefined || num2 === undefined) {
+        throw new Error('You must provide two numbers that divide properly');
+    }
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        throw new Error('You must provide two numbers that divide properly');
+    }
+    if(num2 === 0){
+        throw new Error("Undefined. Cannnot divide by zero");
+    }
+
+    return num1 / num2;
+}
