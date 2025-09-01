@@ -1,3 +1,8 @@
+/**
+ * Description: style.css contains the styling used in index.html to style and alter the webpage's contents.
+ *
+ * Author: Professor Shane Panter, Westley Foster
+ */
 h1{
   border-color: #d3e644;
   border-style: dashed;
@@ -53,4 +58,14 @@ button{
 
 label{
   color: rgb(15, 161, 47);
+}
+
+hr{
+  /* hr styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp */
+  margin-left: 0;
+  margin-right: auto;
+  border: none;
+  width: 86%;
+  height: 2px;
+  background-color: black;
 }

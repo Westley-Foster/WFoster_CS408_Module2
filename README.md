@@ -1,10 +1,5 @@
 # web-dev-starter
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
-
-//NOTE TO SELF: write web-dev-starter here
 This is the starter project for Full Stack Web Development using no frameworks and
 minimal dependencies. It acts as an intro for future web development projects that
 are written in plain HTML, CSS, and JavaScript.
@@ -25,20 +20,18 @@ locally. This will allow you to see changes in real-time as you make them. There
 is no need to run a build process or refresh the page manually. Additionally,
 you do not need to setup a local server to run the project.
 
-//NOTE TO SELF: write Development here
-1. index.html builds a webpage that contains an About Me, a digitally-drawn avatar, and functionality that 
-   allows a user to add two numbers together, fetch and display a random joke, or fetch and display five
-   random jokes at a time. It contains a background image and uses CSS styling from the style.css file to
-   style the contents of the webpage.
+Once the extension is installed, you can start the Live Server by going to the command bar at the top
+of the VSCode IDE and type the command ">Live Preview: Start Server". This will open a second window
+that shows your changes to your code in real-time. To see how your project looks on a full browser
+window, you can copy the address in the search bar of the test window when the server starts.
 
-2. style.css contains the styling used in index.html to style and alter the webpage's contents.
+It is recommended to switch between the test window and your actual browser to determine how the 
+final project will look, as the test window's appearance is more minimized and restricted when 
+displaying the webpage.
 
 3. main.js contains the functionality used in index.html to allow the user to interact with the webpage.
    It's used to add two given numbers and display an alert dialog and fetch and display random jokes 
    when the respective buttons are clicked.
-
-4. test.js includes all the tests to test the functionality in main.js.
-
 
 ## Testing
 
@@ -47,8 +40,6 @@ To run the tests for the project in VSCode, run the following command
 ```bash
 npm test
 ```
-
-//NOTE TO SELF: write Testing here
 
 To run the tests for the project in VSCode, you should first have the VSCode Live Server extension
 installed. Once you do, start the Live Preview server by using the command ">Live Preview: Start Server" 
@@ -59,8 +50,17 @@ npm run test
 ```
 
 in the terminal. This will run all the tests in the test.js file and provide the results of each test in
-the terminal.
+the terminal. Tests included test successfully creating an alert dialog, fetching and retrieving a joke, 
+and several math operations including addition/subtraction, multiplication, and division.
 
-//NOTE TO SELF: need to update helloWorld test to test for an alert rather than the console.log
-Tests included in project are: adding two numbers, multiplying two numbers, and fetching a random joke 
-from the official joke API in main.js.
+## References
+
+<hr> styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp
+
+Background image tutorial found on w3schools.com at https://www.w3schools.com/html/html_images_background.asp
+
+HTML comment notation found through Google's AI Overview
+
+Presenting an alert found on w3schools.com at https://www.w3schools.com/js/js_popup.asp
+
+fetchRandomJoke test was written by ChatGPT

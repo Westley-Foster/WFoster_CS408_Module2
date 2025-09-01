@@ -1,3 +1,11 @@
+<!-- 
+  Description: index.html builds a webpage that contains an About Me, a digitally-drawn avatar, and functionality that 
+  allows a user to add two numbers together, fetch and display a random joke, or fetch and display five random jokes 
+  at a time. It contains a background image and uses CSS styling from the style.css file to style the contents of the 
+  webpage.
+
+  Author: Professor Shane Panter, Westley Foster
+-->
 <!doctype html>
 <html>
 
@@ -45,8 +53,7 @@
     <button  onclick="helloWorld()">Hello World Alert</button>
   </p>
 
-  <!-- hr styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp -->
-  <hr style="border: none; height: 3px; background-color: rgb(195, 140, 219);">
+  <hr>
   <form id="addForm">
     <label for="num1">Number 1:</label>
     <input type="number" id="num1" name="num1" required>
@@ -59,12 +66,12 @@
 
   <label id="result">Result:</label>
 
-  <hr style="border: none; height: 3px; background-color: rgb(195, 140, 219);">
+  <hr>
 
   <button id="jokeButton">Get a Random Joke</button>
-  <p id="joke"></p>
+  <p style="color: rgb(14, 179, 182);" id="joke"></p>
 
-  <hr style="border: none; height: 3px; background-color: rgb(195, 140, 219);">
+  <hr>
   <button id="jokeButtonTable">Get a  5 Random Jokes</button>
   <table id="jokeTable"></table>
 

@@ -1,3 +1,9 @@
+/**
+ * Description: test.js includes all the tests to test the functionality in main.js.
+ * 
+ * Author: Professor Shane Panter, Westley Foster
+ */
+
 //added created multiply, and divide functions from main.js
 import {helloWorld, add, multiply, divide, fetchRandomJoke} from '../js/main.js';
 // Import the sinon library to allow us to create a spy on the console.log function
