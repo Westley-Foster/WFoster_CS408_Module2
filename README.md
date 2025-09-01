@@ -29,10 +29,6 @@ It is recommended to switch between the test window and your actual browser to d
 final project will look, as the test window's appearance is more minimized and restricted when 
 displaying the webpage.
 
-3. main.js contains the functionality used in index.html to allow the user to interact with the webpage.
-   It's used to add two given numbers and display an alert dialog and fetch and display random jokes 
-   when the respective buttons are clicked.
-
 ## Testing
 
 To run the tests for the project in VSCode, run the following command 
