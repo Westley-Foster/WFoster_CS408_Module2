@@ -13,15 +13,18 @@ th, td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  color: rgb(14, 179, 182); /* Added to make it easier to see joke text against the background image */
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: transparent;
   font-weight: bold;
+  color: black;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: transparent;
+  color: rgb(14, 179, 182); /* Added to make it easier to see joke text against the background image */
 }
 
 tbody tr:hover {
