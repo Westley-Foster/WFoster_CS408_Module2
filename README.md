@@ -4,6 +4,11 @@ This is a starter project for web development with no frameworks and minimal
 dependencies. It is intended to be a starting point for web development projects
 that are written in plain HTML, CSS, and JavaScript.
 
+//NOTE TO SELF: write web-dev-starter here
+This is the starter project for Full Stack Web Development using no frameworks and
+minimal dependencies. It acts as an intro for future web development projects that
+are written in plain HTML, CSS, and JavaScript.
+
 ## Getting Started
 
 To get started, clone this repository and run the following commands:
@@ -47,7 +52,7 @@ npm test
 
 To run the tests for the project in VSCode, you should first have the VSCode Live Server extension
 installed. Once you do, start the Live Preview server by using the command ">Live Preview: Start Server" 
-in the command bar at top of the IDE. Once the Live Preview server is started, run the command
+in the command bar at top of the VSCode IDE. Once the Live Preview server is started, run the command
 
 ```bash
 npm run test

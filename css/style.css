@@ -34,10 +34,12 @@ tbody tr:hover {
 /* Added CSS rules */
 h2{
   font-size: 22px;
+  color: rgb(183, 27, 27);
 }
 
 h3{
-  font-size: 18px;
+  font-size: 14px;
+  color: rgb(183, 27, 27)
 }
 
 ul{

@@ -5,15 +5,35 @@ import sinon from 'sinon';
 
 QUnit.module('main.js tests', function() {
 
-    //Modified original helloWorld test to test for button alert instead of the console.log
-    QUnit.test('helloWorld should print Hello World to the console', function(assert) {
+    /* Original QUnit test for helloWorld before changing helloWorld() to an alert dialog instead of a console.log */
+    // QUnit.test('helloWorld should print Hello World to the console', function(assert) {
+    //     //Arrange
+    //     const consoleSpy = sinon.spy(console, 'log');
+    //     //Act
+    //     helloWorld();
+    //     //Assert
+    //     assert.ok(consoleSpy.calledWith('Hello World'), 'console.log should be called with Hello World');
+    //     consoleSpy.restore();
+    // });
+
+    //Modified original helloWorld test to test for alert dialog instead of the console.log
+    QUnit.test('helloWorld should print and display an alert dialog', function(assert) {
+        /* These if-statements were written by ChatGPT to fix the "alert is not defined" error while trying to test */
+        //Mocks window.alert if it doesn't exist, preventing a crash when helloWorld() is called
+        if (!global.window) {
+            global.window = {};
+        }
+        if (!global.window.alert) {
+            global.window.alert = function () {};
+        }
+
         //Arrange
-        const consoleSpy = sinon.spy(console, 'log');
+        const alertSpy = sinon.spy(window, 'alert');
         //Act
         helloWorld();
         //Assert
-        assert.ok(consoleSpy.calledWith('Hello World'), 'console.log should be called with Hello World');
-        consoleSpy.restore();
+        assert.ok(alertSpy.calledWith('Hello World, you clicked the alert button'), 'alert dialogue should be made when called with helloWorld');
+        alertSpy.restore();
     });
 
     QUnit.test('add should return the sum of two numbers', function(assert) {
