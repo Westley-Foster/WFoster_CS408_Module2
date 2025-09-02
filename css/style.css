@@ -18,7 +18,8 @@ th, td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  color: rgb(14, 179, 182); /* Added to make it easier to see joke text against the background image */
+  background-image: linear-gradient(to right, rgba(160, 106, 106, 0.777), rgba(207, 207, 112, 0.384));
+  color: rgb(227, 241, 201); /* Added to make it easier to see joke text against the background image */
 }
 
 th {
