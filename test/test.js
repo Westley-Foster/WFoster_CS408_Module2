@@ -5,7 +5,7 @@
  */
 
 //added created multiply, and divide functions from main.js
-import {helloWorld, add, multiply, divide, fetchRandomJoke} from '../js/main.js';
+import {helloWorld, add, multiply, divide, fetchRandomJoke, fetch5RandomJokes} from '../js/main.js';
 // Import the sinon library to allow us to create a spy on the console.log function
 import sinon from 'sinon';
 
@@ -118,4 +118,42 @@ QUnit.module('main.js tests', function() {
         // Cleanup
         fetchStub.restore();
     });
+
+    /* This test was heavily based off of classmates Evan LeLong's and Lucas Berry's test */
+    QUnit.test('fetch5RandomJokes should return 5 formatted jokes', async function(assert) {
+        const testJokes = 
+        [
+            { setup: "firstSetup", punchline: "firstPunchline" },
+            { setup: "secondSetup", punchline: "secondPunchline" },
+            { setup: "thirdSetup", punchline: "thirdPunchline" },
+            { setup: "fourthSetup", punchline: "fourthPunchline" },
+            { setup: "fifthSetup", punchline: "fifthPunchline" },
+            { setup: "sixthSetup", punchline: "sixthPunchline" },
+            { setup: "seventhSetup", punchline: "seventhPunchline" },
+            { setup: "eigthSetup", punchline: "eighthPunchline" },
+            { setup: "ninthSetup", punchline: "ninthPunchline" },
+            { setup: "tenthSetup", punchline: "tenthPunchline" }
+        ];
+
+        const testResults =
+        [
+            "firstSetup - firstPunchline",
+            "secondSetup - secondPunchline",
+            "thirdSetup - thirdPunchline",
+            "fourthSetup - fourthPunchline",
+            "fifthSetup - fifthPunchline"
+        ];
+
+        const fetchStub = sinon.stub(global, 'fetch').resolves({
+            ok: true,
+            json: async () => testJokes
+        });
+
+        const result = await fetch5RandomJokes();
+
+        assert.strictEqual(result, testResults);
+        fetchStub.restore;
+        
+        
+    })
 });
