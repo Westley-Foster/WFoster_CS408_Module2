@@ -58,3 +58,5 @@ HTML comment notation found through Google's AI Overview
 Presenting an alert found on w3schools.com at https://www.w3schools.com/js/js_popup.asp
 
 fetchRandomJoke test was written by ChatGPT
+
+fetch5RandomJokes test was referenced from classmates Evan LeLon and Lucas Berry

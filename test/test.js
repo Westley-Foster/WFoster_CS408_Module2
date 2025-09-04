@@ -121,6 +121,7 @@ QUnit.module('main.js tests', function() {
 
     /* This test was heavily based off of classmates Evan LeLong's and Lucas Berry's test */
     QUnit.test('fetch5RandomJokes should return 5 formatted jokes', async function(assert) {
+        //Arrange
         const testJokes = 
         [
             { setup: "firstSetup", punchline: "firstPunchline" },
@@ -149,11 +150,13 @@ QUnit.module('main.js tests', function() {
             json: async () => testJokes
         });
 
+        //Act
         const result = await fetch5RandomJokes();
 
-        assert.strictEqual(result, testResults);
-        fetchStub.restore;
-        
-        
-    })
+        //Assert
+        assert.deepEqual(result, testResults);
+
+        //Cleanup
+        fetchStub.restore();
+    });
 });
